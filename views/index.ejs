@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form Assignment</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <h1>Submission Form</h1>
+            <form action='/result' method='POST' class="form-group">
+                <label>You Name:</label><br><input type='text' name='Name'>
+                <br><label>Dojo Location:</label><br><input list="browsers" name="Location">
+                 <datalist id="browsers">
+                     <option value="New York">
+                     <option value="Chicago">
+                     <option value="Miami">
+                     <option value="Austin">
+                     <option value="San Francisco">
+                     <option value="District of Columbia">
+                 </datalist>
+                 <br><label>Favorite Language:</label><br><input list="browsers2" name="Language">
+                  <datalist id="browsers2">
+                      <option value="Python">
+                      <option value="Java">
+                      <option value="JavaScript">
+                      <option value="C#">
+                      <option value="Angular">
+                      <option value="ReactJS">
+                  </datalist>
+                  <br><label>Comment (optinoal):</label><br>
+                <textarea name="Comment"></textarea>
+                <br><input type='submit' value='submit'>
+            </form>
+        </div>
+    </body>
+</html>
